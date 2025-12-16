@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Advanced Lubricant Additives & Custom Formulation Solutions for Global Lubricant Manufacturers. Engineered additive packages delivering performance, stability, and innovation.">
+    <meta name="keywords" content="lubricant additives, custom formulation, lubricant solutions, additive packages">
+    <meta name="author" content="KN Chemizol">
+    <title>Advanced Lubricant Additives & Custom Formulation Solutions | KN Chemizol</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        :root {
+            --primary: #5B4BFF;
+            --secondary: #EEF0FF;
+            --accent: #00E5A8;
+        }
+        
+        .bg-primary {
+            background-color: var(--primary);
+        }
+        
+        .text-primary {
+            color: var(--primary);
+        }
+        
+        .border-primary {
+            border-color: var(--primary);
+        }
+        
+        .bg-secondary {
+            background-color: var(--secondary);
+        }
+        
+        .text-accent {
+            color: var(--accent);
+        }
+        
+        .hover-lift {
+            transition: all 300ms cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+        
+        .hover-lift:hover {
+            transform: translateY(-4px);
+        }
+        
+        .btn-outline {
+            background-color: transparent;
+            border: 2px solid var(--primary);
+            color: var(--primary);
+            border-radius: 50px;
+            padding: 12px 32px;
+            font-weight: 600;
+            transition: all 300ms ease-out;
+            cursor: pointer;
+        }
+        
+        .btn-outline:hover {
+            background-color: var(--primary);
+            color: white;
+            transform: scale(1.05);
+            box-shadow: 0 10px 40px rgba(91, 75, 255, 0.3);
+        }
+        
+        .btn-primary {
+            background-color: var(--primary);
+            color: white;
+            border-radius: 50px;
+            padding: 12px 32px;
+            font-weight: 600;
+            transition: all 300ms ease-out;
+            cursor: pointer;
+            border: 2px solid var(--primary);
+        }
+        
+        .btn-primary:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 40px rgba(91, 75, 255, 0.3);
+            opacity: 0.9;
+        }
+        
+        .card-hover {
+            transition: all 300ms ease-out;
+        }
+        
+        .card-hover:hover {
+            transform: scale(1.05);
+            box-shadow: 0 20px 50px rgba(91, 75, 255, 0.15);
+        }
+        
+        .gradient-text {
+            background: linear-gradient(135deg, #5B4BFF 0%, #00E5A8 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 300ms ease-out;
+        }
+        
+        .faq-answer:not(.hidden) {
+            max-height: 500px;
+        }
+        
+        .faq-icon {
+            transition: transform 300ms ease-out;
+        }
+        
+        .sticky-header {
+            position: sticky;
+            top: 0;
+            z-index: 50;
+            background-color: white;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+        
+        .hero-shape {
+            position: absolute;
+            border-radius: 50%;
+            opacity: 0.1;
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-900">
+    <!-- Header & Navigation -->
+    <header class="sticky-header">
+        <nav class="max-w-7xl mx-auto px-4 md:px-8 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <div class="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-white font-bold text-lg">
+                    K
+                </div>
+                <span class="text-xl font-bold text-primary hidden sm:inline">KN Chemizol</span>
+            </div>
+            
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="#features" class="text-gray-700 font-medium hover:text-primary transition-colors duration-300">Features</a>
+                <a href="#benefits" class="text-gray-700 font-medium hover:text-primary transition-colors duration-300">Benefits</a>
+                <a href="#testimonials" class="text-gray-700 font-medium hover:text-primary transition-colors duration-300">Testimonials</a>
+                <a href="#faq" class="text-gray-700 font-medium hover:text-primary transition-colors duration-300">FAQ</a>
+                <a href="https://wa.link/tm76w7" target="_blank" rel="noopener noreferrer" class="btn-primary text-sm">Get Started</a>
+            </div>
+            
+            <!-- Mobile Menu Button -->
+            <button class="mobile-menu-button md:hidden text-primary font-medium flex items-center">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </nav>
+        
+        <!-- Mobile Menu -->
+        <div class="mobile-menu hidden md:hidden bg-white border-t border-gray-100">
+            <div class="max-w-7xl mx-auto px-4 py-4 space-y-3">
+                <a href="#features" class="block text-gray-700 font-medium py-2 hover:text-primary transition-colors duration-300">Features</a>
+                <a href="#benefits" class="block text-gray-700 font-medium py-2 hover:text-primary transition-colors duration-300">Benefits</a>
+                <a href="#testimonials" class="block text-gray-700 font-medium py-2 hover:text-primary transition-colors duration-300">Testimonials</a>
+                <a href="#faq" class="block text-gray-700 font-medium py-2 hover:text-primary transition-colors duration-300">FAQ</a>
+                <a href="https://wa.link/tm76w7" target="_blank" rel="noopener noreferrer" class="btn-primary block text-center text-sm">Get Started</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative py-16 md:py-20 overflow-hidden">
+        <!-- Decorative shapes -->
+        <div class="hero-shape absolute top-10 right-10 w-64 h-64 bg-primary rounded-full"></div>
+        <div class="hero-shape absolute bottom-20 left-10 w-48 h-48 bg-accent rounded-full"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 md:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center">
+                <div>
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight tracking-tight mb-6">
+                        Advanced Lubricant Additives & Custom Formulation Solutions
+                    </h1>
+                    <p class="text-lg md:text-xl text-gray-700 font-medium mb-8 leading-relaxed">
+                        Engineered additive packages delivering performance, stability, and innovation for global lubricant manufacturers. Transform your product portfolio with our cutting-edge solutions.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="https://wa.link/tm76w7" target="_blank" rel="noopener noreferrer" class="btn-primary text-center">
+                            <i class="fas fa-whatsapp mr-2"></i> Contact Us Today
+                        </a>
+                        <button class="btn-outline text-center">
+                            <i class="fas fa-play mr-2"></i> Learn More
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="relative h-96 hidden lg:block">
+                    <div class="absolute inset-0 bg-gradient-to-br from-primary to-accent rounded-2xl opacity-20 transform rotate-3"></div>
+                    <div class="absolute inset-0 flex items-center justify-center">
+                        <div class="text-center">
+                            <i class="fas fa-flask text-8xl text-primary mb-4 opacity-30"></i>
+                            <p class="text-gray-700 font-medium">Precision Formulation</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-12 md:py-16 bg-secondary">
+        <div class="max-w-7xl mx-auto px-4 md:px-8">
+            <div class="text-center mb-12 md:mb-16">
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 tracking-tight">
+                    Comprehensive Additive Solutions
+                </h2>
+                <p class="text-lg text-gray-700 font-medium max-w-2xl mx-auto">
+                    Our complete portfolio of advanced additives covers every requirement for modern lubricant formulation
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+                <!-- Feature 1 -->
+                <div class="card-hover bg-white rounded-2xl p-8 shadow-md">
+                    <div class="w-14 h-14 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mb-6">
+                        <svg class="w-7 h-7 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 3.104v5.714a2.25 2.25 0 01-.659 1.591L5 14.5M9.75 3.104c.366.092.748.057 1.059-.236l8.244-8.244a.75.75 0 111.06 1.06L10.86 4.928a.75.75 0 01-1.06 0L3.11 1.513a.75.75 0 011.06-1.06l8.244 8.244c.311.293.693.328 1.059.236z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Comprehensive Additive Portfolio</h3>
+                    <p class="text-gray-700 font-medium leading-relaxed">
+                        Access our extensive range of high-performance additives including anti-wear agents, anti-oxidants, detergents, dispersants, and viscosity modifiers. Each component is meticulously selected and tested to ensure superior performance and compatibility with your specific formulation requirements.
+                    </p>
+                </div>
+                
+                <!-- Feature 2 -->
+                <div class="card-hover bg-white rounded-2xl p-8 shadow-md">
+                    <div class="w-14 h-14 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mb-6">
+                        <svg class="w-7 h-7 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M4.26 10.147a60 60 0 00-.3 6.197M15.666 3.888A24.002 24.002 0 015.82 2.75m14.956 5.236A23.986 23.986 0 0012 2.75m0 0a23.868 23.868 0 00-7.519 3.288M15 12a3 3 0 11-6 0 3 3 0 016 0zm6 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Advanced R&D Capabilities</h3>
+                    <p class="text-gray-700 font-medium leading-relaxed">
+                        Our state-of-the-art research and development facility is equipped with cutting-edge analytical instruments and testing equipment. Our expert team of chemists and engineers continuously innovate to develop next-generation additive solutions that exceed industry standards and meet emerging market demands.
+                    </p>
+                </div>
+                
+                <!-- Feature 3 -->
+                <div class="card-hover bg-white rounded-2xl p-8 shadow-md">
+                    <div class="w-14 h-14 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mb-6">
+                        <svg class="w-7 h-7 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9.594 3.94c.09-.542.56-.94 1.11-.94h2.592c.55 0 1.02.398 1.11.94m-9.642 0A9.001 9.001 0 005.422 20.6a9 9 0 0013.156 0c.09-.542.56-.94 1.11-.94h2.592c.55 0 1.02.398 1.11.94M9.594 3.94c.363-2.152-1.688-3.764-3.848-3.764-2.159 0-3.957 1.042-4.509 2.856m13.215 0c-.363-2.152-1.688-3.764-3.848-3.764-2.159 0-3.957 1.042-4.509 2.856m0 0A9.001 9.001 0 003.12 7.08M12 12a4.5 4.5 0 110-9 4.5 4.5 0 010 9zm0 0a4.5 4.5 0 110-9 4.5 4.5 0 010 9z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Custom Formulation Services</h3>
+                    <p class="text-gray-700 font-medium leading-relaxed">
+                        We specialize in developing tailored additive packages specifically designed for your unique application requirements. Our collaborative approach ensures that every formulation is optimized for performance, cost-efficiency, and sustainability while meeting all regulatory compliance standards.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="benefits" class="py-12 md:py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 md:px-8">
+            <div class="text-center mb-12 md:mb-16">
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 tracking-tight">
+                    Transform Your Lubricant Performance
+                </h2>
+                <p class="text-lg text-gray-700 font-medium max-w-2xl mx-auto">
+                    Unlock competitive advantages with our scientifically proven benefits
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
+                <!-- Benefit 1 -->
+                <div class="flex gap-6 card-hover p-6 rounded-2xl hover:bg-secondary transition-colors duration-300">
+                    <div class="flex-shrink-0">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-full bg-primary bg-opacity-10">
+                            <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Reduce Development Time</h3>
+                        <p class="text-gray-700 font-medium leading-relaxed">
+                            Accelerate your product development cycle by leveraging our pre-formulated, tested additive packages. Our ready-to-use solutions eliminate months of research and validation, allowing you to bring innovative products to market faster than your competitors.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Benefit 2 -->
+                <div class="flex gap-6 card-hover p-6 rounded-2xl hover:bg-secondary transition-colors duration-300">
+                    <div class="flex-shrink-0">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-full bg-primary bg-opacity-10">
+                            <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Enhance Product Performance</h3>
+                        <p class="text-gray-700 font-medium leading-relaxed">
+                            Our advanced additives deliver measurable improvements in viscosity index, thermal stability, oxidation resistance, and wear protection. Experience superior lubrication performance that exceeds industry specifications and customer expectations.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Benefit 3 -->
+                <div class="flex gap-6 card-hover p-6 rounded-2xl hover:bg-secondary transition-colors duration-300">
+                    <div class="flex-shrink-0">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-full bg-primary bg-opacity-10">
+                            <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Cost-Effective Solutions</h3>
+                        <p class="text-gray-700 font-medium leading-relaxed">
+                            Optimize your formulation costs without compromising quality. Our efficient additive packages maximize performance per unit cost, improving your profit margins while maintaining the highest standards of product excellence and reliability.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Benefit 4 -->
+                <div class="flex gap-6 card-hover p-6 rounded-2xl hover:bg-secondary transition-colors duration-300">
+                    <div class="flex-shrink-0">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-full bg-primary bg-opacity-10">
+                            <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Future-Proof Your Portfolio</h3>
+                        <p class="text-gray-700 font-medium leading-relaxed">
+                            Stay ahead of regulatory changes and evolving market demands with our forward-thinking additive solutions. Our products are designed to comply with emerging environmental standards and support your transition to sustainable, eco-friendly lubricant formulations.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section with Background Image -->
+    <section class="relative py-16 md:py-24 bg-cover bg-center" style="background-image: linear-gradient(rgba(26, 26, 26, 0.7), rgba(26, 26, 26, 0.7)), url('https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200&h=600&fit=crop');">
+        <div class="max-w-7xl mx-auto px-4 md:px-8 text-center">
+            <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6 tracking-tight">
+                Ready to Revolutionize Your Lubricant Formulations?
+            </h2>
+            <p class="text-lg md:text-xl text-gray-100 font-medium mb-8 max-w-2xl mx-auto">
+                Partner with KN Chemizol and gain access to industry-leading additive solutions backed by decades of expertise and innovation.
+            </p>
+            <a href="https://wa.link/tm76w7" target="_blank" rel="noopener noreferrer" class="btn-primary inline-block">
+                <i class="fas fa-whatsapp mr-2"></i> Start Your Journey Today
+            </a>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-12 md:py-16 bg-secondary">
+        <div class="max-w-7xl mx-auto px-4 md:px-8">
+            <div class="text-center mb-12 md:mb-16">
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 tracking-tight">
+                    What Our Customers Say
+                </h2>
+                <p class="text-lg text-gray-700 font-medium max-w-2xl mx-auto">
+                    Trusted by leading lubricant manufacturers worldwide
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
+                <!-- Testimonial 1 -->
+                <div class="card-hover bg-white rounded-2xl p-6 shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-accent">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 font-medium mb-6 leading-relaxed">
+                        "KN Chemizol's custom formulation services transformed our product line. We reduced development time by 40% and achieved superior performance metrics that exceeded our expectations."
+                    </p>
+                    <div>
+                        <p class="text-gray-900 font-bold">Michael Chen</p>
+                        <p class="text-gray-600 text-sm">Technical Director, Global Lubricants Inc.</p>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="card-hover bg-white rounded-2xl p-6 shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-accent">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 font-medium mb-6 leading-relaxed">
+                        "The comprehensive additive portfolio and technical support from KN Chemizol have been instrumental in our market expansion. Their expertise is unmatched in the industry."
+                    </p>
+                    <div>
+                        <p class="text-gray-900 font-bold">Sarah Williams</p>
+                        <p class="text-gray-600 text-sm">Product Manager, Premium Oil Solutions</p>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="card-hover bg-white rounded-2xl p-6 shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-accent">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 font-medium mb-6 leading-relaxed">
+                        "Working with KN Chemizol has been a game-changer for our R&D department. Their advanced additives consistently deliver measurable improvements in oxidation resistance and thermal stability."
+                    </p>
+                    <div>
+                        <p class="text-gray-900 font-bold">Dr. James Rodriguez</p>
+                        <p class="text-gray-600 text-sm">Head of Research, EuroTech Lubricants</p>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 4 -->
+                <div class="card-hover bg-white rounded-2xl p-6 shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-accent">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 font-medium mb-6 leading-relaxed">
+                        "Exceptional quality and responsiveness. KN Chemizol's team went above and beyond to ensure our custom formulation met all specifications. Highly recommended!"
+                    </p>
+                    <div>
+                        <p class="text-gray-900 font-bold">Emma Thompson</p>
+                        <p class="text-gray-600 text-sm">Operations Director, AsiaPacific Oils Ltd.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="py-12 md:py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 md:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6 tracking-tight">
+                        About KN Chemizol
+                    </h2>
+                    <p class="text-gray-700 font-medium leading-relaxed mb-6">
+                        Founded in 2008, KN Chemizol emerged from a vision to revolutionize the lubricant additives industry through innovation, quality, and customer-centric solutions. What began as a small research laboratory has evolved into a globally recognized leader in advanced additive formulation. Our journey has been marked by continuous investment in cutting-edge technology, strategic partnerships with industry leaders, and an unwavering commitment to exceeding customer expectations. Today, we serve over 500 lubricant manufacturers across six continents, providing them with the chemical solutions they need to compete in an increasingly demanding global market.
+                    </p>
+                    <p class="text-gray-700 font-medium leading-relaxed">
+                        At the heart of KN Chemizol lies a mission to empower lubricant manufacturers with scientifically advanced, sustainable, and cost-effective additive solutions. We believe in fostering long-term partnerships built on trust, transparency, and mutual success. Our core values—Innovation, Excellence, Integrity, and Sustainability—guide every decision we make. We are dedicated to pushing the boundaries of what's possible in lubricant technology while maintaining the highest standards of environmental responsibility and regulatory compliance. Our team of world-class chemists, engineers, and technical specialists work tirelessly to ensure that every additive package we deliver represents the pinnacle of performance and reliability.
+                    </p>
+                </div>
+                
+                <div class="relative">
+                    <div class="absolute inset-0 bg-gradient-to-br from-primary to-accent rounded-2xl opacity-20 transform -rotate-3"></div>
+                    <div class="bg-secondary rounded-2xl p-8 relative z-10">
+                        <div class="space-y-8">
+                            <div class="flex items-start gap-4">
+                                <div class="flex-shrink-0">
+                                    <div class="flex items-center justify-center h-12 w-12 rounded-full bg-primary">
+                                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h3 class="text-lg font-bold text-gray-900">15+ Years Experience</h3>
+                                    <p class="text-gray-700 font-medium">Industry-leading expertise in additive formulation</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-4">
+                                <div class="flex-shrink-0">
+                                    <div class="flex items-center justify-center h-12 w-12 rounded-full bg-primary">
+                                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h3 class="text-lg font-bold text-gray-900">500+ Clients</h3>
+                                    <p class="text-gray-700 font-medium">Trusted by manufacturers in 6 continents</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-4">
+                                <div class="flex-shrink-0">
+                                    <div class="flex items-center justify-center h-12 w-12 rounded-full bg-primary">
+                                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m7 8a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h3 class="text-lg font-bold text-gray-900">Quality Assured</h3>
+                                    <p class="text-gray-700 font-medium">ISO certified processes and rigorous testing</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-12 md:py-16 bg-secondary">
+        <div class="max-w-4xl mx-auto px-4 md:px-8">
+            <div class="text-center mb-12 md:mb-16">
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 tracking-tight">
+                    Frequently Asked Questions
+                </h2>
+                <p class="text-lg text-gray-700 font-medium">
+                    Find answers to common questions about our additive solutions
+                </p>
+            </div>
+            
+            <div class="space-y-4">
+                <!-- FAQ Item 1 -->
+                <div class="faq-item bg-white rounded-2xl shadow-md overflow-hidden">
+                    <button class="faq-question w-full px-6 md:px-8 py-6 flex items-center justify-between cursor-pointer hover:bg-secondary transition-colors duration-300">
+                        <span class="text-lg font-bold text-gray-900 text-left">What types of additives do you offer?</span>
+                        <svg class="faq-icon w-6 h-6 text-primary flex-shrink-0 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+                        </svg>
+                    </button>
+                    <div class="faq-answer hidden px-6 md:px-8 pb-6 border-t border-gray-200">
+                        <p class="text-gray-700 font-medium leading-relaxed">
+                            We offer a comprehensive portfolio of high-performance additives including anti-wear (AW) agents, anti-oxidants, detergents, dispersants, viscosity modifiers, pour point depressants, and foam inhibitors. Our product range covers automotive, industrial, marine, and specialty lubricant applications. Each additive is formulated to the highest purity standards and undergoes rigorous quality testing to ensure consistent performance and compatibility with various base oil systems.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 2 -->
+                <div class="faq-item bg-white rounded-2xl shadow-md overflow-hidden">
+                    <button class="faq-question w-full px-6 md:px-8 py-6 flex items-center justify-between cursor-pointer hover:bg-secondary transition-colors duration-300">
+                        <span class="text-lg font-bold text-gray-900 text-left">How long does custom formulation development typically take?</span>
+                        <svg class="faq-icon w-6 h-6 text-primary flex-shrink-0 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+                        </svg>
+                    </button>
+                    <div class="faq-answer hidden px-6 md:px-8 pb-6 border-t border-gray-200">
+                        <p class="text-gray-700 font-medium leading-relaxed">
+                            The timeline for custom formulation development depends on the complexity of your requirements and testing specifications. Typically, we can deliver initial formulation samples within 2-4 weeks. Full development cycles including stability testing, performance validation, and regulatory compliance documentation usually take 8-12 weeks. Our experienced team works closely with you throughout the process to ensure rapid iteration and timely delivery. For expedited projects, we offer accelerated development programs with dedicated resources.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 3 -->
+                <div class="faq-item bg-white rounded-2xl shadow-md overflow-hidden">
+                    <button class="faq-question w-full px-6 md:px-8 py-6 flex items-center justify-between cursor-pointer hover:bg-secondary transition-colors duration-300">
+                        <span class="text-lg font-bold text-gray-900 text-left">Are your additives compliant with international regulations?</span>
+                        <svg class="faq-icon w-6 h-6 text-primary flex-shrink-0 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+                        </svg>
+                    </button>
+                    <div class="faq-answer hidden px-6 md:px-8 pb-6 border-t border-gray-200">
+                        <p class="text-gray-700 font-medium leading-relaxed">
+                            Absolutely. All our additives are formulated and tested to comply with major international standards and regulations including API, ASTM, ISO, NOACK, and environmental regulations such as REACH and RoHS. We maintain certifications for quality management systems (ISO 9001) and environmental management systems (ISO 14001). Our technical team stays current with evolving regulations and proactively adapts our formulations to ensure continued compliance with emerging standards globally.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 4 -->
+                <div class="faq-item bg-white rounded-2xl shadow-md overflow-hidden">
+                    <button class="faq-question w-full px-6 md:px-8 py-6 flex items-center justify-between cursor-pointer hover:bg-secondary transition-colors duration-300">
+                        <span class="text-lg font-bold text-gray-900 text-left">What is your minimum order quantity?</span>
+                        <svg class="faq-icon w-6 h-6 text-primary flex-shrink-0 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+                        </svg>
+                    </button>
+                    <div class="faq-answer hidden px-6 md:px-8 pb-6 border-t border-gray-200">
+                        <p class="text-gray-700 font-medium leading-relaxed">
+                            Our minimum order quantities vary depending on the specific additive and your application requirements. For standard off-the-shelf additives, typical MOQs range from 100 to 1,000 liters. For custom formulations, we can work with smaller quantities during the development and validation phase. Once you transition to full production, standard MOQs apply. We also offer flexible supply arrangements and long-term contracts to meet your specific business needs and production schedules.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 5 -->
+                <div class="faq-item bg-white rounded-2xl shadow-md overflow-hidden">
+                    <button class="faq-question w-full px-6 md:px-8 py-6 flex items-center justify-between cursor-pointer hover:bg-secondary transition-colors duration-300">
+                        <span class="text-lg font-bold text-gray-900 text-left">Do you provide technical support and training?</span>
+                        <svg class="faq-icon w-6 h-6 text-primary flex-shrink-0 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+                        </svg>
+                    </button>
+                    <div class="faq-answer hidden px-6 md:px-8 pb-6 border-t border-gray-200">
+                        <p class="text-gray-700 font-medium leading-relaxed">
+                            Yes, we provide comprehensive technical support and training services as part of our commitment to customer success. Our technical team is available to assist with formulation optimization, troubleshooting, performance analysis, and regulatory compliance. We offer on-site training programs for your technical staff covering proper handling, storage, quality control, and application techniques. Additionally, we provide detailed technical documentation, safety data sheets, and regular updates on product innovations and industry best practices.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-12 md:py-16">
+        <div class="max-w-7xl mx-auto px-4 md:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+                <!-- Company Info -->
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <div class="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-white font-bold">
+                            K
+                        </div>
+                        <span class="text-xl font-bold text-white">KN Chemizol</span>
+                    </div>
+                    <p class="text-gray-400 font-medium mb-4">
+                        Advanced lubricant additives and custom formulation solutions for global manufacturers.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-primary transition-colors duration-300">
+                            <i class="fab fa-linkedin text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-primary transition-colors duration-300">
+                            <i class="fab fa-twitter text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-primary transition-colors duration-300">
+                            <i class="fab fa-facebook text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-white font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#features" class="text-gray-400 hover:text-primary transition-colors duration-300 font-medium">Features</a></li>
+                        <li><a href="#benefits" class="text-gray-400 hover:text-primary transition-colors duration-300 font-medium">Benefits</a></li>
+                        <li><a href="#testimonials" class="text-gray-400 hover:text-primary transition-colors duration-300 font-medium">Testimonials</a></li>
+                        <li><a href="#faq" class="text-gray-400 hover:text-primary transition-colors duration-300 font-medium">FAQ</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Resources -->
+                <div>
+                    <h3 class="text-white font-bold mb-4">Resources</h3>
+                    <ul class="space-y-3">
+                        <li><a href="blog.html" class="text-gray-400 hover:text-primary transition-colors duration-300 font-medium">Blog</a></li>
+                        <li><a href="privacy.html" class="text-gray-400 hover:text-primary transition-colors duration-300 font-medium">Privacy Policy</a></li>
+                        <li><a href="terms.html" class="text-gray-400 hover:text-primary transition-colors duration-300 font-medium">Terms of Service</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Contact -->
+                <div>
+                    <h3 class="text-white font-bold mb-4">Contact Us</h3>
+                    <div class="space-y-3">
+                        <div>
+                            <p class="text-gray-400 font-medium text-sm">Email</p>
+                            <a href="mailto:info@knchemizol.com" class="text-primary hover:text-accent transition-colors duration-300 font-medium">info@knchemizol.com</a>
+                        </div>
+                        <div>
+                            <p class="text-gray-400 font-medium text-sm">WhatsApp</p>
+                            <a href="https://wa.link/tm76w7" target="_blank" rel="noopener noreferrer" class="text-primary hover:text-accent transition-colors duration-300 font-medium flex items-center">
+                                <i class="fab fa-whatsapp mr-2"></i> Get in Touch
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Divider -->
+            <div class="border-t border-gray-700 my-8"></div>
+            
+            <!-- Bottom Footer -->
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 font-medium text-center md:text-left mb-4 md:mb-0">
+                    &copy; 2025 KN Chemizol. All rights reserved.
+                </p>
+                <p class="text-gray-400 font-medium text-center text-sm">
+                    Engineered for Excellence • Formulated for Performance
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Mobile Menu Toggle
+            const mobileMenuButton = document.querySelector('.mobile-menu-button');
+            const mobileMenu = document.querySelector('.mobile-menu');
+            
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                    const icon = mobileMenuButton.querySelector('i');
+                    if (icon) {
+                        icon.classList.toggle('fa-bars');
+                        icon.classList.toggle('fa-times');
+                    }
+                });
+
+                const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+                mobileMenuLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileMenu.classList.add('hidden');
+                        const icon = mobileMenuButton.querySelector('i');
+                        if (icon) {
+                            icon.classList.remove('fa-times');
+                            icon.classList.add('fa-bars');
+                        }
+                    });
+                });
+            }
+
+            // FAQ Accordion Toggle
+            const faqItems = document.querySelectorAll('.faq-item');
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                if (question) {
+                    question.addEventListener('click', () => {
+                        const answer = item.querySelector('.faq-answer');
+                        const isOpen = !answer.classList.contains('hidden');
+                        
+                        // Close all other FAQ items
+                        faqItems.forEach(otherItem => {
+                            if (otherItem !== item) {
+                                otherItem.querySelector('.faq-answer')?.classList.add('hidden');
+                                otherItem.querySelector('.faq-icon')?.classList.remove('rotate-180');
+                            }
+                        });
+                        
+                        // Toggle current item
+                        answer?.classList.toggle('hidden');
+                        item.querySelector('.faq-icon')?.classList.toggle('rotate-180');
+                    });
+                }
+            });
+
+            // Smooth Scroll for Anchor Links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    const href = this.getAttribute('href');
+                    if (href !== '#' && href.length > 1) {
+                        e.preventDefault();
+                        const target = document.querySelector(href);
+                        if (target) {
+                            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
